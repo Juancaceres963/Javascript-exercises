@@ -1,0 +1,19 @@
+const tijera = "Tijera";
+const piedra = "Piedra";
+const papel = "Papel";
+
+function juego(jugador1, jugador2){
+  if (jugador1 === tijera && jugador2 === papel){
+    return "Jugador 1 Win!"
+  } else if (jugador1 === piedra && jugador2 === tijera) { return "Jugador 1 Win!"
+  } else if (jugador1 === papel && jugador2 === piedra) { return "Jugador 1 Win!"
+  } else if (jugador1 === jugador2) { 
+    return "Empate, juguen de nuevo"}
+  else {
+    return "Jugador 2 Win!"
+  }
+}
+
+console.log(juego(papel, tijera));
+
+// Jugador 2 Win!
